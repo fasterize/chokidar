@@ -222,7 +222,7 @@ FSWatcher.prototype._emit = function(event, path, val1, val2, val3) {
   }
 
   if (event === 'change') {
-    if (!this._throttle('change', path, 50)) return this;
+    if (!this._throttle('change', path, 5)) return this;
   }
 
   if (
